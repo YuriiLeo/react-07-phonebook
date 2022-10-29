@@ -2,11 +2,11 @@ import React from 'react';
 import { nanoid } from 'nanoid';
 import PropTypes from 'prop-types';
 import { Input } from './Filter.styled';
-import { getFilter } from 'redux/selectors';
+import { selectFilter } from 'redux/selectors';
 import { useSelector } from "react-redux";
 
 export default function Filter({onChange}) {
-  const filter = useSelector(getFilter);
+  const filter = useSelector(selectFilter);
   const filterId = nanoid();
   return (
       <div>

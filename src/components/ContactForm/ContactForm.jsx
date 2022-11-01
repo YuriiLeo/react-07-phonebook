@@ -57,7 +57,7 @@ const onAddContact = (contact) => {
           value={name}
           onChange={handleChange}
         />
-         <label htmlFor={phoneId}>phone</label>
+         <label htmlFor={phoneId}>Phone</label>
          <Input
           id={phoneId}
           type="tel"
